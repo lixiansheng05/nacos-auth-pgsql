@@ -66,16 +66,15 @@ db.url.0=jdbc:postgresql://127.0.0.1:5432/nacos?tcpKeepAlive=true&reWriteBatched
 db.user.0=postgres
 db.password.0=123456
 db.pool.config.driverClassName=org.postgresql.Driver
-~~~
+
 # 配置本鉴权插件名字
 nacos.core.auth.system.type=nacos_pg
+~~~
 ### 3.3创建nacos数据库
-nacos-pgsql.sql到PostgreSQL数据库
+将nacos-pgsql.sql导入到PostgreSQL数据库
 ### 3.4启动nacos服务
 单机模式启动：
 ~~~
 cd nacos/
 ./bin/startup.sh -m standalone
 ~~~
-## 4.许可证
-Apache 许可证版本 2.0
