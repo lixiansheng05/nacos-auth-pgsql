@@ -2,10 +2,9 @@
 Nacos通过集成插件适配pgsql
 快速使用
 ## 1.下载
-
+ [直接下载](https://github.com/lixiansheng05/nacos-auth-pgsql/releases)
 ## 2.创建nacos数据库
 将nacos-pgsql.sql导入到PostgreSQL数据库
-
 ## 3.配置数据库
 ### Windows
 编辑conf/application.properties配置文件
