@@ -1,14 +1,13 @@
 # 简介
 Nacos通过集成插件适配pgsql
 快速使用
-## 1.下载：
+## 1.下载
 
-## 2.编辑配置
-### 3.3创建nacos数据库
+## 2.创建nacos数据库
 将nacos-pgsql.sql导入到PostgreSQL数据库
 
-### 2.1配置数据库
-#### Windows
+## 3.配置数据库
+### Windows
 编辑conf/application.properties配置文件
 ~~~
 db.url.0=jdbc:postgresql://IP:5432/menhu?currentSchema=nacos
@@ -16,7 +15,7 @@ db.user.0=用户名
 db.password.0=密码
 db.pool.config.driverClassName=org.postgresql.Driver
 ~~~
-#### Liunx
+### Liunx
 编辑docker-compose.yml配置文件
 ##### 注：Liunx一般用于生产环境，需要配置Nacos鉴权信息，不懂得可以去Nacos官网学习。
 ~~~
@@ -32,8 +31,7 @@ db.pool.config.driverClassName=org.postgresql.Driver
   #用于生成用户登陆临时accessToken所使用的密钥
 - NACOS_AUTH_TOKEN=
 ~~~
-
-## 3启动
+## 4.启动
 单机模式启动：
 ### Windows
 ~~~
